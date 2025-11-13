@@ -1,0 +1,15 @@
+# @format
+
+name: Say Hello
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the world
+        run: echo "Hello, GitHub Actions!"
